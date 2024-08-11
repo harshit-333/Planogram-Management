@@ -1,0 +1,103 @@
+.planogram-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  position: relative;  /* Add position relative if not already there */
+  z-index: 1;  /* Ensure z-index is lower than the overlay */
+}
+
+.grid {
+  display: grid;
+}
+
+.slot {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  border: solid;
+  border-width: 1px;
+  border-color: #e3e3e3;
+  border-radius: 7px;
+  background-color: #f9f9f9;
+  position: relative;
+}
+
+.product-rectangle {
+  background-color: rgb(173, 172, 172);
+  border-radius: 4px;
+  border: solid 1px;
+}
+
+.empty-slot {
+  font-size: 14px;
+  color: #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%; /* Ensure it takes full height */
+  width: 100%; /* Ensure it takes full width */
+  text-align: center;
+}
+
+.tooltip {
+  
+  position: absolute;
+  background-color: #FFF;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  flex-direction: column;
+  padding: 50px;
+  box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+  pointer-events: none; /* Makes sure the tooltip doesn't interfere with hover events */
+  z-index: 1000;
+  transform: translate(10px, -10px); /* Adjusts the position of the tooltip */
+}
+
+.tooltip p {
+  margin: 5px 0;
+  font-size: 12px;
+  color: #333;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  padding-left: 20px;
+  position: absolute;
+  top: 70px;
+  left: 20px;
+  right: 0;
+  margin: 15px;
+  font-family: 'HelveticaforTarget';
+  font-weight: bold;
+  margin-top: 100px;
+  justify-content: flex-end;
+  
+  
+}
+
+.edit-button,
+.delete-button {
+  padding: 3px 15px; /* Decreased padding */
+  font-size: 12px; 
+  font-size: 13px;
+  background-color: #3366FF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.edit-button {
+  background-color: #3366FF;
+  margin-right: 10px;
+}
+
+.delete-button {
+  background-color: red;
+  cursor: pointer;
+}

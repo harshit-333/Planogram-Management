@@ -1,0 +1,67 @@
+.toggle-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.toggle {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 130px;
+  height: 36px;
+  border-radius: 20px;
+  background-color: #d3d3d3;
+  position: relative;
+  border: solid;
+  border-width: 2px;
+  padding: 0;
+  overflow: hidden;
+}
+
+.toggle-option {
+  width: 50%;
+  text-align: center;
+  font-family: 'HelveticaforTarget';
+  font-weight: bold;
+  font-size: 12px;
+  padding: 5px;
+  transition: color 0.3s ease;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.option-left {
+  left: 0;
+}
+
+.option-right {
+  right: 0;
+}
+
+.active {
+  color: white;
+}
+
+.inactive {
+  color: grey;
+}
+
+.slider {
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  border-radius: 20px;
+  background-color: black;
+  transition: transform 0.3s ease-in-out;
+  z-index: 0;
+}
+
+.slider-left {
+  transform: translateX(0);
+}
+
+.slider-right {
+  transform: translateX(100%);
+}

@@ -1,0 +1,266 @@
+.form-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 20px;
+  justify-content: flex-start;
+  position: relative;
+}
+
+.form-options { 
+  display: flex;
+  flex-direction: row;
+  gap: 10em;
+  top: 0;  
+  right: 0;
+  margin: 1em;
+  font-family: 'HelveticaforTarget';
+  font-weight: bold;
+}
+
+.button-container-top {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.form-card {
+  background-color: white;
+  border: 1px solid #E3E3E3;
+  padding: 32px 30px 32px 30px;
+  border-radius: 8px;
+  width: 360px;
+  height: auto;
+  box-shadow: 0px 2px 3px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s;
+}
+
+
+
+.form-field-id, .form-field-dim, .form-field-location {
+  margin-bottom: 20px;
+}
+
+.form-field-id label {
+  display: block;
+  margin-top: 2em;
+  margin-bottom: 7px;
+  font-family: 'HelveticaforTarget';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-field-id input {
+  padding: 10px;
+  width: 300px;
+  height: 32px;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  font-size: 12px;
+  font-family: 'HelveticaforTarget';
+  color: #000000; /* Ensures text color is black */
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.form-field-id input:hover {
+  transform: scale(1.02);
+  border-color: #A9A9A9; /* Custom highlight color for input fields */
+}
+
+.form-field-dim-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field-dim label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-family: 'HelveticaforTarget';
+  font-weight: bold;
+}
+
+.form-field-dim input {
+  padding: 10px;
+  width: 136px;
+  height: 32px;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  font-family: 'HelveticaforTarget';
+  font-size: 12px;
+  color: #000000; /* Ensures text color is black */
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.form-field-dim input:hover {
+  transform: scale(1.02);
+  border-color: #A9A9A9; /* Custom highlight color for input fields */
+}
+
+.form-field-location-container {
+  display: flex;
+  justify-content: space-between;
+}
+
+.form-field-location label {
+  display: block;
+  margin-bottom: 7px;
+  font-family: 'HelveticaforTarget';
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.form-field-location input {
+  width: 100%;
+  height: 32px;
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.form-field-location input:hover {
+  transform: scale(1.02);
+  border-color: #FFC107; /* Custom highlight color for input fields */
+}
+
+.form-field-row {
+  margin-bottom: 15px;
+}
+
+.form-field-row label {
+  display: block;
+  margin-bottom: 7px;
+  font-size: 14px;
+  font-family: 'HelveticaforTarget';
+  font-weight: bold;
+}
+
+.quantity-selector {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.quantity-plus {
+  background-color: #3366FF;
+  color: white;
+  width: 26px;
+  height: 26px;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.quantity-plus:hover {
+  transform: scale(1.1);
+  background-color: #0056b3; /* Custom highlight color for button */
+}
+
+.quantity-minus {
+  background-color: #e8e7e7;
+  color: white;
+  width: 26px;
+  height: 26px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: transform 0.3s;
+}
+
+.quantity-minus:hover {
+  transform: scale(1.1);
+  background-color: #A9A9A9; /* Custom highlight color for button */
+}
+
+.quantity-number {
+  width: 36px;
+  font-size: 13px;
+  display: flex;
+  justify-content: center;
+  color: #000000; /* Ensures text color is black */
+}
+
+/* Hides the arrows for number inputs in Chrome, Safari, Edge, and Opera */
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Hides the arrows for number inputs in Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  position: absolute;
+  top: 70px;
+  right: 0;
+  margin: 20px;
+  font-family: 'HelveticaforTarget';
+  font-weight: bold;
+}
+
+.edit-button,
+.delete-button {
+  padding: 3px 15px; /* Decreased padding */
+  font-size: 12px; 
+  font-size: 13px;
+  background-color: #3366FF;
+  color: white;
+  border: none;  
+  border-radius: 5px;
+  cursor: pointer;
+  transition: transform 0.3s, background-color 0.3s;
+}
+
+.edit-button:hover {
+  transform: scale(1.1);
+  background-color: #0056b3; /* Custom highlight color for button */
+}
+
+.delete-button {
+  background-color: red;
+}
+
+.delete-button:hover {
+  transform: scale(1.1);
+  background-color: darkred; /* Custom highlight color for button */
+}
+
+.form-wrapper {  
+  position: relative;
+}
+
+
+
+.form-field-horizontal {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.custom-dropdown {
+  border: 1px solid #E3E3E3;
+  border-radius: 5px;
+  transition: transform 0.3s, border-color 0.3s;
+}
+
+.custom-dropdown:hover {
+  transform: scale(1.02);
+  border-color: #A9A9A9; /* Custom highlight color for dropdown */
+}
+
+
